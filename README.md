@@ -4,7 +4,7 @@
 
 ## 🆕最新消息
 
-- 2023年8月16日：上传了前4题的题解
+- 2023年8月16日：上传了前5题的题解
 
 ## 📔笔记目录
 
@@ -22,7 +22,7 @@
 
 [toc]
 
-# 0128. 最长连续序列](https://leetcode.cn/problems/longest-consecutive-sequence/)
+# [0128. 最长连续序列](https://leetcode.cn/problems/longest-consecutive-sequence/)
 
 - 标签：并查集、数组、哈希表
 - 难度：中等
@@ -135,6 +135,8 @@ class Solution:
 
 - **时间**复杂度：**$O(n)$**
 - **空间**复杂度：待考证
+
+！[leetcode-python3-hot100/README.assets/image-20230809194544359.png at master · lgy0404/leetcode-python3-hot100 (github.com)](https://github.com/lgy0404/leetcode-python3-hot100/blob/master/README.assets/image-20230809194544359.png)
 
 ![image-20230809194544359](README.assets/image-20230809194544359.png)
 
