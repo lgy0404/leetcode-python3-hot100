@@ -24,7 +24,6 @@
 
 **03 leetcode 哈希 0128 最长连续序列 230809**
 
-
 # [0128. 最长连续序列](https://leetcode.cn/problems/longest-consecutive-sequence/)
 
 - 标签：并查集、数组、哈希表
@@ -139,6 +138,8 @@ class Solution:
 - **时间**复杂度：**$O(n)$**
 - **空间**复杂度：待考证
 
+![image-20230809194544359](https://lgy0404.oss-cn-shanghai.aliyuncs.com/typoratyporaimage-20230809194544359.png)
+
 ### **思考与收获**
 
 #### `if num not in hash_dict` 这里说的`num`是`hash_dict`的键还是值？
@@ -163,4 +164,4 @@ class Solution:
 
 总之，`hash_dict.get(num - 1, 0)` 这个操作是为了获取数字 `num - 1` 在 `hash_dict` 中的连续序列长度（如果存在），或者返回默认值 `0`（如果不存在）。这个信息将用于计算当前数字 `num` 所在连续序列的长度。
 
- 参考：[128. 最长连续序列 - 力扣（LeetCode）](https://leetcode.cn/problems/longest-consecutive-sequence/solutions/3956/dong-tai-gui-hua-python-ti-jie-by-jalan/?envType=study-plan-v2&envId=top-100-liked)
+ 参考：[128. 最长连续序列 - 力扣（LeetCode）https://leetcode.cn/problems/longest-consecutive-sequence/solutions/3956/dong-tai-gui-hua-python-ti-jie-by-jalan/?envType=study-plan-v2&envId=top-100-liked)
