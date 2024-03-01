@@ -1,22 +1,18 @@
 #
-# @lc app=leetcode.cn id=1 lang=python
+# @lc app=leetcode.cn id=1 lang=python3
 #
 # [1] 两数之和
 #
 
 # @lc code=start
-
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        # 维护 val -> index 的映射
-        valToIndex = {}
-        for i in range(len(nums)):
-            # 查表，看看是否有能和 nums[i] 凑出 target 的元素
-            need = target - nums[i]
-            if need in valToIndex:
-                return [valToIndex[need], i]
-            # 存入 val -> index 的映射
-            valToIndex[nums[i]] = i
-        return []
+        #哈希表解题
+        hashtable = {}
+        for index,val in enumerate(nums):
+            if target - val not in hashtable:
+                hashtable[val] = index
+            else:
+                return [hashtable[target - val],index]
 # @lc code=end
 
