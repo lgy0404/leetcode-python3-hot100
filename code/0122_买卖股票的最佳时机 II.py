@@ -15,7 +15,10 @@ def maxProfit(prices):
     return dfs(n -1, False)
 
 if __name__ == '__main__':
-    prices = list(map(int, input().strip().split()))
+
+    prices = input().strip().split()
+    # prices = sys.stdin.readline().strip().split()  # 和用input一样，不推荐
+    prices = list(map(int, prices))
     
     result = maxProfit(prices)
     print(result)
