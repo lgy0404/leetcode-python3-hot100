@@ -7,6 +7,7 @@ def maxProfit(prices):
     def dfs(i:int, hold:bool) -> int:
         if i < 0:
             return -float('inf') if hold else 0
+            # return 'inf' if hold else 0
         if hold:
             return max(dfs(i - 1, True), dfs(i - 1, False) - prices[i])
         else:
