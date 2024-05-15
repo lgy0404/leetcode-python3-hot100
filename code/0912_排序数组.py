@@ -36,8 +36,8 @@ class Solution:
         return nums
 
 if __name__ == '__main__':
-    arr = input("Enter space-separated integers: ").strip().split()
-    arr = list(map(int, arr))
-    solution = Solution()
-    sortarr = solution.sortArray(arr)
+    arr = input("Enter space-separated integers: ").strip().split() # strip() 函数在 Python 中可以用于移除字符串首尾的特定字符。
+    arr = list(map(int, arr))  # map() 函数是 Python 中的一个内置函数，它接受两个参数：一个函数和一个可迭代对象。它的作用是将传入的函数应用到可迭代对象的每个元素上，并返回一个新的迭代器。list() 函数用于将一个迭代器或其他可迭代对象转换成一个列表。
+    solution = Solution() # 实例化类
+    sortarr = solution.sortArray(arr) # 调用类中的方法函数
     print(sortarr)
